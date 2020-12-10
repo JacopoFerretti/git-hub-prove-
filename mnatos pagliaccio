@@ -1,0 +1,8 @@
+pagliaccio = input("Scrivi il nome del più grande pagliaccio"
+" mai esistito ")
+if pagliaccio == "matos" :
+    print("Effettivamente hai ragione")
+elif pagliaccio == "mara" :
+    print("il più grande raccomandato dopo il pompinaro matos ")
+else:
+    print("mi sa che il pagliaccio sei tu")
