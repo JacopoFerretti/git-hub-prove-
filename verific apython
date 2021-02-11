@@ -1,0 +1,51 @@
+from spalla import Verifica
+
+
+Verifica.firma("Jacopo Ferretti")
+
+
+def es1():
+    es=Verifica.inizia_esercizio(1)
+    risposta = es.dati
+    es.consegna(risposta.lower())
+es1()
+
+def es2():
+    es=Verifica.inizia_esercizio(2)
+    numero = es.dati
+    es.consegna(numero*numero)
+es2()
+
+def es3():
+    es=Verifica.inizia_esercizio(3)
+    dic = es.dati
+    es.consegna(dic.get("cognome"))
+es3()
+
+def es4():
+    es=Verifica.inizia_esercizio(4)
+    lista = es.dati 
+    es.consegna(len(lista))
+es4()
+
+
+def es5():
+    es=Verifica.inizia_esercizio(5)
+    lista = es.dati
+    lista2 = []
+    for parola in lista:
+        lista2.append(parola.upper())
+    es.consegna(lista2)
+es5()
+
+def es6():
+    es=Verifica.inizia_esercizio(6)
+    lista = es.dati
+    somma = 0
+    for n in lista:
+        somma += n
+    es.consegna(somma)
+es6()
+
+
+Verifica.stampa_voto()
